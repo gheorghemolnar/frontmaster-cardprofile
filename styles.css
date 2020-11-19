@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/bg-pattern-top.svg"),
+    url("/images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 80%, 95%;
+  background-position: top -15% left -100%, bottom 20% right -850%;
+  background-color: rgb(25, 161, 173, 0.9);
+}
+.container {
+  /* // #19a1ad; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 25px;
+}
+.profile {
+  border-radius: 25px;
+  min-height: 500px;
+  min-width: 325px;
+}
+
+.container .profile .header {
+  min-height: 150px;
+  background-image: url("/images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.container .profile .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.container .profile .body h2 {
+  margin: 20px 0 0 0;
+}
+.container .profile .body h2 .age {
+  color: gray;
+  padding-left: 10px;
+}
+.container .profile .body .location {
+  margin: 10px 0 20px 0;
+  color: lightgray;
+  letter-spacing: 1.5px;
+}
+.container .profile .body img {
+  border-radius: 100px;
+  padding: 5px;
+  margin-top: -17%;
+  padding: 5px;
+  background-color: white;
+}
+.container .profile .footer {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid lightgray;
+  border-radius: 0 0 15px 15px;
+  padding: 25px 0 20px 0;
+}
+.container .profile .footer .infos {
+  min-width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .profile .footer .infos h3 {
+  margin: 0px;
+}
+.container .profile .footer .infos .label {
+  color: gray;
+  margin-top: 5px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    background-image: url("/images/bg-pattern-top.svg"),
+      url("/images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 80.5%, 80.5%;
+    background-position: top 170% left -160%, bottom 160% right -155%;
+    background-color: #19a1ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile {
+    max-height: 500px;
+    max-width: 350px;
+  }
+}
+
+/* @media (max-width:   ){
+    background-size: 150%, 150%;
+    background-position: top 380% left 200%, bottom 300% right 200%;);
+} */
