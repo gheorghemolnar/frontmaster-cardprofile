@@ -1,3 +1,10 @@
+:root {
+  --primary-01: hsl(185, 75%, 39%);
+  --primary-02: hsl(227, 10%, 46%);
+  --primary-03: hsl(229, 23%, 23%);
+
+  --secondary--01: hsl(0, 0%, 59%);
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,10 +13,10 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-size: 80%, 95%;
   background-position: top -15% left -100%, bottom 20% right -850%;
-  background-color: rgb(25, 161, 173, 0.9);
+  background-color: var(--primary-01);
+  font-family: "Kumbh Sans", sans-serif;
 }
 .container {
-  /* // #19a1ad; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,16 +44,18 @@ body {
   align-items: center;
   background-color: white;
 }
-.container .profile .body h2 {
+.container .profile .body .name {
+  font-size: 18px;
+  font-weight: 700;
   margin: 20px 0 0 0;
 }
-.container .profile .body h2 .age {
-  color: gray;
+.container .profile .body .name .age {
+  color: var(--primary-02);
   padding-left: 10px;
 }
 .container .profile .body .location {
   margin: 10px 0 20px 0;
-  color: lightgray;
+  color: var(--secondary--01);
   letter-spacing: 1.5px;
 }
 .container .profile .body img {
@@ -74,24 +83,26 @@ body {
   align-items: center;
 }
 
-.container .profile .footer .infos h3 {
+.container .profile .footer .infos .counter {
+  font-size: 18px;
   margin: 0px;
+  font-weight: 700;
 }
 .container .profile .footer .infos .label {
-  color: gray;
+  color: var(--secondary--01);
   margin-top: 5px;
   font-size: 12px;
   letter-spacing: 1.5px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .container {
     background-image: url("/images/bg-pattern-top.svg"),
       url("/images/bg-pattern-bottom.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: 80.5%, 80.5%;
     background-position: top 170% left -160%, bottom 160% right -155%;
-    background-color: #19a1ad;
+    background-color: var(--primary-01);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,8 +112,3 @@ body {
     max-width: 350px;
   }
 }
-
-/* @media (max-width:   ){
-    background-size: 150%, 150%;
-    background-position: top 380% left 200%, bottom 300% right 200%;);
-} */
